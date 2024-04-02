@@ -1,0 +1,59 @@
+@font-face{
+    font-family: "helvetica-normal";
+    src: url(../assets/fonts/helvetica/Helvetica.ttf);
+}
+
+@font-face{
+    font-family: "helvetica-bold";
+    src: url(../assets/fonts/helvetica/Helvetica-Bold.ttf);
+}
+
+:root{
+    --myFontNormal: "helvetica-normal", sans-serif;
+    --myFontBold: "helvetica-bold", "sans-serif";
+    --firstColor: #ffa43a;
+    --secondColor: #759eff;
+    --colorWhite: #fff;
+    --paragraphColor: #1d1d1d;
+    --space10Px: 10px;
+    --space20Px: 20px;
+    --space30Px: 30px;
+    --space40Px: 40px;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: var(--myFontNormal);
+    max-width: 1400px;
+}
+h1,h2,h3,h4,h5,h6,
+p{
+    margin: 0;
+    color: var(--paragraphColor);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+main.main
+> section.main-section-first, section.main-section-second, section.main-section-third, section.main-section-fourth, section.main-section-fifth, footer.footer{
+    padding: calc((var(--space40Px) * 2)) 5%;
+}
+

@@ -1,0 +1,88 @@
+/* Header responsive*/
+
+
+@media (max-width: 900px){
+
+    header.header
+    > div.header-navbar{
+        position: relative;
+    }
+
+    /* Menu - nav ---------->*/
+    header.header
+    > div.header-navbar
+    > nav.navbar-nav{
+        background-color: var(--firstColor);
+        position: absolute;
+        top: 0;
+        left: -500px;
+        width: 80%;
+        height: 400px;
+        z-index: 3;
+        border-bottom-right-radius: var(--space10Px);
+        transition: left .4s ease;
+    }
+
+    header.header
+    > div.header-navbar
+    > nav.navbar-nav.active{
+        left: -23px;
+
+    }
+
+    header.header
+    > div.header-navbar
+    > nav.navbar-nav
+    > ul.nav-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 0;
+        padding-left: 0;
+
+    }
+
+    header.header
+    > div.header-navbar
+    > nav.navbar-nav
+    > ul.nav-list
+    > li.list-item
+    > a.item-link{
+        color: var(--paragraphColor);
+    }
+
+    header.header
+    > div.header-navbar
+    > nav.navbar-nav
+    > ul.nav-list
+    > li.list-item
+    > a.item-link:hover{
+        color: var(--paragraphColor);
+        border-bottom: 1px solid var(--paragraphColor);
+    }
+
+    /* Navbar menu hamburger*/
+    header.header
+    > div.header-navbar
+    > div.navbar-menu-hamburger{
+        display: block;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    /* Hero ----------------->*/
+
+    header.header
+    > div.header-hero{
+        gap: var(--space10Px);
+    }
+
+    header.header
+    > div.header-hero
+    > h2.hero-title{
+        text-align: center;
+
+    }
+
+}

@@ -1,0 +1,15 @@
+/* Responsive section first*/
+
+@media (max-width: 900px){
+    main.main
+    > section.main-section-first{
+    }
+    
+    /* left article*/
+    main.main 
+    > section.main-section-first 
+    > article.first-article,article.second-article{
+        grid-column: span 2;
+    }
+
+}

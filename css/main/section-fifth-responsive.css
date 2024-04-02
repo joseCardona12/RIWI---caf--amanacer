@@ -1,0 +1,17 @@
+/* section fifth responsive*/
+
+@media (max-width:900px){
+    main.main
+    > section.main-section-fifth
+    > div.fifth-title
+    > h2.title{
+        width: 45%;
+    }
+
+    main.main
+    > section.main-section-fifth
+    > div.fifth-title
+    > hr.title-line{
+        width: 55%;
+    }
+}

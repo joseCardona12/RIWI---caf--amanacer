@@ -1,0 +1,154 @@
+/* footer*/
+
+footer.footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: var(--space20Px);
+    background-color: var(--secondColor);
+}
+
+
+/* Element privacity*/
+
+footer.footer
+> div.footer-privacity{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space20Px);
+}
+
+footer.footer
+> div.footer-form{
+
+}
+
+/* Element form.-----------*/
+footer.footer
+> div.footer-form
+> form.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--space10Px);
+}
+
+footer.footer
+> div.footer-form
+> form.form
+> div.form-email{
+    width: 70%;
+}
+
+footer.footer
+> div.footer-form
+> form.form
+> div.form-email
+> input.email-input{
+    width: 100%;
+    border-radius: var(--space10Px);
+    border: 1px solid var(--secondColor);
+    padding: var(--space10Px);
+    outline: none;
+    font-family: var(--myFontNormal);
+    border: 1px solid var(--paragraphColor);
+}
+
+footer.footer
+> div.footer-form
+> form.form
+> div.form-email
+> input.email-input:focus{
+    background-color: var(--firstColor);
+}
+
+footer.footer
+> div.footer-form
+> form.form
+> div.form-button{
+    width: 30%;
+}
+
+footer.footer
+> div.footer-form
+> form.form
+> div.form-button
+> input.button{
+    width: 100%;
+    border: 1px solid var(--paragraphColor);
+    padding: var(--space10Px);
+    background-color: transparent;
+    border-radius: var(--space10Px);
+    font-family: var(--myFontNormal);
+    transition: background-color .4s ease;
+}
+
+footer.footer
+> div.footer-form
+> form.form
+> div.form-button
+> input.button:hover{
+    background-color: var(--firstColor);
+}
+
+/* Element menu ----------*/
+
+footer.footer
+> div.footer-menu
+> nav.navbar-nav
+> ul.nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer.footer
+> div.footer-menu
+> nav.navbar-nav
+> ul.nav-list
+> li.list-item
+> a{
+    color: var(--paragraphColor);
+    transition: color .4s ease;
+}
+
+footer.footer
+> div.footer-menu
+> nav.navbar-nav
+> ul.nav-list
+> li.list-item
+> a:hover{
+    color: var(--firstColor);
+    border-bottom: 1px solid var(--firstColor);
+}
+
+/* Element contact*/
+
+footer.footer
+> div.footer-contact
+> ul.contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+footer.footer
+> div.footer-contact
+> ul.contact-list
+> li.list-item
+> a{
+    color: var(--paragraphColor);
+}
+
+footer.footer
+> div.footer-contact
+> ul.contact-list
+> li.list-item
+> a.item-link-contact{
+    display: flex;
+    gap: var(--space10Px);
+}

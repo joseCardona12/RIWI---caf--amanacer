@@ -1,0 +1,28 @@
+/* section third responsive*/
+@media (max-width:900px){
+    /* third title */
+
+    main.main
+    > section.main-section-third
+    > div.third-title
+    > h2.title{
+        width: 45%;
+    }  
+
+    main.main
+    > section.main-section-third
+    > div.third-title
+    > hr.line{
+        width: 55%;
+    }
+
+    /* articles */
+    main.main
+    > section.main-section-third
+    > div.third-content
+    > article.content-article
+    > div.article-body{
+        width: 100%;
+        justify-content: center;
+    }  
+}
