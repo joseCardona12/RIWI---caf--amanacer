@@ -1,0 +1,105 @@
+/* second section*/
+
+main.main
+> section.main-section-second{
+    background-color: var(--secondColor);
+}
+
+/* second title*/
+main.main
+> section.main-section-second
+> div.second-title{
+    font-family: var(--myFontBold);
+    margin-bottom: var(--space30Px);
+    display: flex;
+    align-items: center;
+}
+
+main.main
+> section.main-section-second
+> div.second-title
+> h2.title{
+    width: 15%;
+}
+
+main.main
+> section.main-section-second
+> div.second-title
+> hr.line{
+    width: 85%;
+    height: 1px;
+    border: 1px solid var(--paragraphColor);
+}
+
+main.main
+> section.main-section-second 
+> div.second-content{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space40Px);
+
+}
+
+/* second content*/
+main.main
+> section.main-section-second 
+> div.second-content
+> article.content-article{
+    flex-basis: calc((100% - 80px) / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space10Px);
+    padding: var(--space20Px);
+    border: 1px solid var(--paragraphColor);
+    border-radius: var(--space10Px);
+    transition: background-color .2s ease;
+}
+
+main.main
+> section.main-section-second 
+> div.second-content
+> article.content-article:hover{
+    background-color: var(--firstColor);
+}
+
+/* article header*/
+main.main
+> section.main-section-second 
+> div.second-content
+> article.content-article
+> div.article-header{
+    width: 40%;
+}
+
+main.main
+> section.main-section-second 
+> div.second-content
+> article.content-article
+> div.article-header
+> img.header-image{
+    width: 100%;
+}
+
+/* article body*/
+main.main
+> section.main-section-second
+> div.second-content
+> article.content-article
+> div.article-body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space10Px);
+}
+
+main.main
+> section.main-section-second
+> div.second-content
+> article.content-article
+> div.article-body
+> h3.article-title{
+    font-family: var();
+}

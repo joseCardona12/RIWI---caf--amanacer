@@ -1,0 +1,53 @@
+/* Fourth section*/
+
+main.main
+> section.main-section-fourth{
+    min-height: 400px;
+    background-color: var(--firstColor);
+}
+
+/* fourth - title*/
+
+main.main
+> section.main-section-fourth
+> div.fourth-title{
+    display: flex;
+    align-items: center;
+}
+
+main.main
+> section.main-section-fourth
+> div.fourth-title
+> h2.title{
+    width: 10%;
+    font-family: var(--myFontBold);
+}
+
+main.main
+> section.main-section-fourth
+> div.fourth-title
+> hr.title-line{
+    width: 85%;
+    height: 1px;
+    border: 1px solid var(--paragraphColor);
+}
+
+/* Fourth content */
+main.main
+> section.main-section-fourth
+> div.fourth-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space10Px);
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+main.main
+> section.main-section-fourth
+> div.fourth-content
+> div.content-logo{
+    flex-basis: calc((100% - 40px) / 5);
+}

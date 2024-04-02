@@ -1,0 +1,27 @@
+/* section second responsive*/
+
+@media (max-width:900px){
+
+    /* second title*/
+    main.main 
+    > section.main-section-second 
+    > div.second-title 
+    > h2.title{
+        width: 45%;
+    }
+
+    main.main 
+    > section.main-section-second 
+    > div.second-title 
+    > hr.line{
+        width: 55%;
+    }
+
+    /* second content---------->*/
+    main.main
+    > section.main-section-second 
+    > div.second-content
+    > article.content-article{
+        flex-basis: 100%;
+    }
+}

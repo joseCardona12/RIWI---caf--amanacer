@@ -1,0 +1,56 @@
+/* First section ------------> */
+
+main.main{
+    overflow: hidden;
+}
+
+main.main 
+> section.main-section-first{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+
+/* left article*/
+main.main 
+> section.main-section-first 
+> article.first-article{
+    height: 300px;
+}
+
+main.main 
+> section.main-section-first 
+> article.first-article 
+> img.article-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--space10Px);
+    transition: opacity .4s ease,
+                transform .4s ease;
+}
+
+main.main 
+> section.main-section-first 
+> article.first-article 
+> img.article-image:hover{
+    opacity: .7;
+    transform: scale(1.02);
+
+}
+
+/* right article*/
+
+article.second-article{
+    padding: var(--space20Px);
+}
+
+article.second-article 
+> h2.article-title{
+    margin-bottom: var(--space10Px);
+    font-family: var(--myFontBold);
+    color: var(--firstColor);
+
+}
+
